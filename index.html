@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet'href="styles.css">
+    <script src='index.js'></script>
+</head>
+<body>
+    <div id="intro">
+        <p class="title" id="actual">Metric/Imperial Unit Conversion By Shyam Vyas</p>
+        <!-- <h1 class="title" id="number">20</h1> -->
+        <input type="number" class="title" id="number" min="1" max="10000000000">
+        <script>
+            document.getElementById("number").defaultValue=1;
+        </script>
+    </div>
+       <div id="encompass"> 
+        <div id="buttondiv">
+            <button id="convert">Convert</button>
+        </div>
+        <div id="content">
+            <div id="length">
+                <p class="static-title">Length (Meter/Feet)</p>
+                <p id="length-conversion">1 meters = 3.281 feet | 1 feet = 0.305 meters </p>
+            </div>
+            <div id="volume">
+                <p class="static-title">Volume (Liter/Gallons)</p>
+                <p id="volume-conversion">1 liters = 0.264 gallons | 1 gallons = 3.785 liters</p>
+            </div>
+            <div id="mass">
+                <p class="static-title">Mass (Kilogram/Pounds)</p>
+                <p id="mass-conversion">1 kilograms = 2.205 pounds | 1 pounds = 0.454 kilograms</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
